@@ -1,0 +1,4 @@
+services:
+  plugin.manager.taxonomy_access_delegate.taxonomy_access_delegate:
+    class: Drupal\taxonomy_access_delegate\TaxonomyAccessDelegate\TaxonomyAccessDelegatePluginManager
+    parent: default_plugin_manager

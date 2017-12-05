@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Implements hooks.
+ */
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function taxonomy_access_delegate_entity_type_alter(array &$entity_types) {
+  /** @var \Drupal\Core\Entity\ContentEntityType $term */
+  $term = $entity_types['taxonomy_term'];
+
+  $term->setHandlerClass(
+    'access',
+    'Drupal\taxonomy_access_delegate\Access\TaxonomyAccessControlHandler'
+  );
+}

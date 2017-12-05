@@ -1,0 +1,5 @@
+name: Taxonomy Access Delegate
+type: module
+description: Delegates Access Handling of taxonomy terms
+package:
+core: 8.x
